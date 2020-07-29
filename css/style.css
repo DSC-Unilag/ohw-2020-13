@@ -20,18 +20,42 @@ main  {
     /* padding: 10rem; */
 }
 
-.border-text { 
+.border-text-one { 
     border: 1px solid #2F3C7E;
     outline: none!important;
 }
 
-.border-text:hover {
+.border-text-two { 
+    border: 1px solid #FBEAEB;
+    outline: none!important;
+}
+
+.border-text-one:hover {
     background-color: #2F3C7E;
     color: #FBEAEB;
+    cursor: pointer;
+}
+
+.border-text-two:hover {
+    background-color: #FBEAEB;
+    color: #2F3C7E;
     cursor: pointer;
 }
 
 .donate-bg-one { background-color: #2F3C7E;}
 .donate-bg-two { background-color: #FBEAEB;}
 
-.donate-text { color: #2F3C7E;}
+.donate-text-one { color: #2F3C7E;}
+.donate-text-two { color: #FBEAEB;}
+
+.text { color: #FBEAEB;}
+
+.refugee-bg { 
+    background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/refugee-bg.jpg") center fixed no-repeat;
+    background-size: cover;
+    padding-bottom: 10rem;
+
+
+}
+
+.img-donated-text {background-color: #FBEAEB;}
