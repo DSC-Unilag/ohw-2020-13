@@ -1,3 +1,37 @@
-.header-bg-img  {
-    background-image: ;
+html, body {
+    /* color:#555; */
+    font-family: 'Poppins', sans-serif;
+	text-rendering: optimizeLegibility; 
+    scroll-behavior: smooth;
+	/* overflow-x: hidden; */
 }
+
+nav { height: ;
+     background-image: linear-gradient(to right, #FBEAEB, #2F3C7E);}
+
+main  {
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)),  url("/img/header-bg-img.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    /* padding: 10rem; */
+}
+
+.border-text { 
+    border: 1px solid #2F3C7E;
+    outline: none!important;
+}
+
+.border-text:hover {
+    background-color: #2F3C7E;
+    color: #FBEAEB;
+    cursor: pointer;
+}
+
+.donate-bg-one { background-color: #2F3C7E;}
+.donate-bg-two { background-color: #FBEAEB;}
+
+.donate-text { color: #2F3C7E;}
