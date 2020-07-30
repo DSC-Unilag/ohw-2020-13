@@ -2,7 +2,6 @@ html, body {
     font-family: 'Poppins', sans-serif;
 	text-rendering: optimizeLegibility; 
     scroll-behavior: smooth;
-	/* overflow-x: hidden; */
 }
 
 .navbar-light .navbar-brand { 
@@ -25,7 +24,6 @@ main  {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    /* padding: 10rem; */
 }
 
 .border-text-one { 
@@ -63,8 +61,6 @@ main  {
 	background-attachment: fixed;
     background-repeat: no-repeat;
     padding-bottom: 10rem;
-
-
 }
 
 .img-donated-text {background-color: #FBEAEB;}
@@ -76,10 +72,11 @@ main  {
     background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+}
 
 .upcoming-events { 
-    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/img2.jpg");
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/img2.jpg");
     background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -87,8 +84,7 @@ main  {
 }
 
 footer { 
-     background-image:
-     linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/footer-bg-img.jpg");
+     background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/footer-bg-img.jpg");
      background-size: cover;
 	 background-position: center;
 	 background-attachment: fixed;
