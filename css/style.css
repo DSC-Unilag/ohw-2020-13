@@ -57,8 +57,11 @@ main  {
 .donate-text-two { color: #FBEAEB;}
 
 .refugee-bg { 
-    background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/refugee-bg.jpg") center fixed no-repeat;
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/refugee-bg.jpg");
     background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
     padding-bottom: 10rem;
 
 
@@ -68,11 +71,29 @@ main  {
 
 .bg-progress{ background-color: #2F3C7E;}
 
-.volunteer-img { background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/volunteer.jpg") center fixed no-repeat;}
+.volunteer-img { 
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/volunteer.jpg");
+    background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;}
 
-.upcoming-events { background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/img2.jpg") center fixed no-repeat;}
+.upcoming-events { 
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/img2.jpg");
+    background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
-footer {  background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/footer-bg-img.jpg") center fixed no-repeat;}
+footer { 
+     background-image:
+     linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/footer-bg-img.jpg");
+     background-size: cover;
+	 background-position: center;
+	 background-attachment: fixed;
+     background-repeat: no-repeat;
+    }
 
 textarea { resize: none;}
 
