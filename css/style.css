@@ -56,9 +56,9 @@ main  {
 
 .refugee-bg { 
     background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/refugee-bg.jpg");
-    background-size: cover;
+    /* background-size: cover; */
 	background-position: center;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
     background-repeat: no-repeat;
     padding-bottom: 10rem;
 }
