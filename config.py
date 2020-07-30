@@ -11,21 +11,21 @@ class Config:
 
 class DevelopmentConfig(Config):
     SQALCHEMY_DATABASE_URI = f"sqlite:///{basedir}/ohw13Dev.sqlite"
-    FLASK_ENV=Development
+    FLASK_ENV='development'
     DEBUG=True
 
 class TestingConfig(Config):
     SQALCHEMY_DATABASE_URI = f"sqlite:///{basedir}/ohw13Test.sqlite"
-    FLASK_ENV=Testing
+    FLASK_ENV='testing'
     DEBUG=True
 
 class ProductionConfig(Config):
     SQALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL') # Heroku Demands this
-    FLASK_ENV=Production
+    FLASK_ENV='production'
     DEBUG=True
 
 config = {
-    "default":DevelopmentConfig
+    "default":DevelopmentConfig,
     "development":DevelopmentConfig,
     "testing":TestingConfig,
     "production":ProductionConfig

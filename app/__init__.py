@@ -5,11 +5,11 @@ from .main import main
 from config import config
 
 # App Factory
-def __call__(config_name):
+def __call__(config_name: str):
     app = Flask (__name__)
 
     # Add config from config.py
-    app.config.from_object(config[çonfig_name])
+    app.config.from_object(config[str(config_name)])
 
     db.init_app(app)
     migrate.init_app(app,db)

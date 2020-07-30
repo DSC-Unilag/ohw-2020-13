@@ -1,5 +1,5 @@
 from flask import Blueprint
 
-cpanel = Blueprint(name='cpanel',__name__)
+cpanel = Blueprint('cpanel',__name__,template_folder='templates')
 
 from . import views
