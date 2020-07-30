@@ -5,6 +5,7 @@ html, body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 /*  -------- NAVIGATION -------- */
 .navbar-light .navbar-brand { 
     color: #2F3C7E;
