@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <title>NGO Template</title>
 </head>
@@ -39,17 +40,16 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="header-text text-white text-left pt-5">
-                <h6 class="header-text-one donate-bg-one mt-5 p-2 w-75 text-center">How you could help</h6>
+        <div class="container pt-5">
+            <div class="header-text text-white text-left pt-sm-5 text-sm-center wow slideInLeft" data-wow-duration="2s">
+                <h6 class="header-text-one donate-bg-one mt-5 p-2 p-sm-3 w-75 text-center m-sm-auto">How you could help</h6>
                 <h4 class="mt-5 font-weight-bold">SIGN THE PETITION NOW</h4>
-                <!-- <h3 class="btn btn-outline-danger text-white mt-3 p-2 w-75">TELL THE WORLD YOU STAND <br>#WITHREFUGEES</h3> -->
             </div>
     
-            <div class="border-text-one text rounded text-center text-white mt-3 p-2 w-50">
+            <div class="border-text-one text rounded text-center text-white mt-3 p-2 w-50 m-sm-auto p-sm-3 mb-md-5" data-aos="fade-right">
                 <h5 class="m-auto">MAKE DONATION</h5>
             </div>
-            <div class="border-text-one rounded text-center text-white mt-3 p-2 w-50">
+            <div class="border-text-one rounded text-center text-white mt-3 p-2 w-50 m-sm-auto p-sm-3" data-aos="fade-left">
                 <h5 class="m-auto">VIEW CAUSES</h5>
             </div>
         </div>
@@ -57,8 +57,8 @@
 
     <section class="donate px-4 mt-n4">
         <div class="container">
-            <div class="row d-block d-md-flex justify-content-between">
-                <div class="col col-md-3 text-left px-5 mb-5 donate-bg-two">
+            <div class="row d-block d-lg-flex">
+                <div class="col col-md text-left px-5 mb-5 donate-bg-two" data-aos="slide-right">
                     <div class="donate-test-one py-5" id="donate-now">
                         <h4 class="font-weight-bold py-3">DONATE NOW!</h4>
                         <p class="font-weight-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, expedita.</p>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 
-                <div class="col col-md-3 text-left px-5 mb-5 donate-bg-one">
+                <div class="col col-md text-left px-5 mb-5 donate-bg-one" data-aos="fade-up">
                     <div class="donate-text-two py-5">
                         <h4 class="font-weight-bold py-3">CONTRIBUTE NOW!</h4>
                         <p class="font-weight-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, expedita.</p>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
 
-                <div class="col col-md-3 text-left px-5 mb-5 donate-bg-two">
+                <div class="col col-md text-left px-5 mb-5 donate-bg-two" data-aos="slide-left">
                     <div class="donate-test-one py-5">
                         <h4 class="font-weight-bold py-3">HELP NOW!</h4>
                         <p class="font-weight-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, expedita.</p>
@@ -103,9 +103,9 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol> -->
             <div class="carousel-inner">
-                <div class="card-deck">
+                <div class="card-deck row">
                     <div class="carousel-item active">
-                        <div class="card">
+                        <div class="card col-sm-10 col-xl-7 m-sm-auto">
                             <div>
                                 <img src="img/header-bg-img.jpg" class="card-img-top" alt="Card2">
                             </div>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card">
+                        <div class="card col-sm-10 col-xl-7 m-sm-auto">
                             <div>
                                 <img src="img/card1.jpg" class="card-img-top" alt="Card2">
                             </div>
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card">
+                        <div class="card col-sm-10 col-xl-7 m-sm-auto">
                             <div>
                                 <img src="img/card2.jpg" class="card-img-top" alt="Card2">
                             </div>
@@ -152,11 +152,11 @@
                 </div>
             </div>
              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon mt-n5" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon mt-n5 ml-sm-auto" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon mt-n5" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon mt-n5 mr-sm-auto" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
@@ -168,9 +168,9 @@
                 <div class="text-center pt-5">
                     <h6 class="donate-bg-one p-2 w-100 text-white">BECOME A VOLUNTEER</h6>
                     <h1 class="font-weight-bold donate-text-two">NO ONE HAS EVER BECOME POOR BY GIVING</h1>
-                    <p class="text-left p-4 donate-text-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure obcaecati impedit ipsa fugit a.</p>
+                    <p class="text-left p-4 px-lg-5 donate-text-two font-weight-light" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at repellendus incidunt nesciunt consequuntur laudantium sint rerum voluptatibus, assumenda, esse quidem temporibus aliquid excepturi placeat velit voluptatum mollitia necessitatibus non. Iste ad magni est non error quae natus nisi culpa dolorem repudiandae, deleniti blanditiis numquam eum eveniet commodi harum ea.</p>
                 </div>
-                <div class="donate-btn  p-4">
+                <div class="donate-btn p-4 px-lg-5">
                     <a href="#"><button class="border-text-two rounded p-2 donate-bg-one donate-text-two">GET INVOLVED NOW</button></a>
                 </div>
             </div>
@@ -184,9 +184,9 @@
         </div>
 
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner row m-sm-auto">
               <div class="carousel-item active">
-                <div class="card">
+                <div class="card col-sm-10 col-xl-7 m-sm-auto">
                   <div>
                     <img src="img/img4.jpg" class="card-img-top" alt="Card2">
                   </div>
@@ -199,7 +199,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="card">
+                <div class="card col-sm-10 col-xl-7 m-sm-auto">
                   <div>
                     <img src="img/img2.jpg" class="card-img-top" alt="Card2">
                   </div>
@@ -212,7 +212,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="card">
+                <div class="card col-sm-10 col-xl-7 m-sm-auto">
                   <div>
                     <img src="img/img1.jpg" class="card-img-top" alt="Card2">
                   </div>
@@ -227,11 +227,11 @@
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon mt-n5" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon mt-n5 ml-sm-auto" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon mt-n5" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon mt-n5 mr-sm-auto" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
@@ -243,11 +243,11 @@
           <h6 class="donate-bg-one p-2 w-100 text-white">STORY ABOUT US</h6>
           <h1 class="font-weight-bold donate-text-two">UPCOMING EVENTS</h1>
         </div>
-        <div class="row d-block mx-auto">
-          <div class="event1">
-            <div class="col col-md-3 event1 d-flex border-text-one text rounded  text-white mt-3 p-2 w-50 mb-2">
-              <div class="col-4 font-weight-bold h1 number">15</div>
-              <div class="col-2 text">MAY (MONDAY)</div>
+        <div class="row d-block d-lg-flex mx-auto">
+          <div class="event1 col-lg-4"data-aos="fade-up-right">
+            <div class="col col-md-3 col-lg-6 event1 d-flex border-text-one text rounded text-white mt-3 p-2 w-50 mb-2">
+              <div class="col-4 col-lg-5 font-weight-bold h1 number">15</div>
+              <div class="col-2 col-lg">MAY (MON)</div>
             </div>
             <div class="event-text donate-text-two">
               <h4 class="font-weight-bold">Preparing to Help Young Central American Refugees</h4>
@@ -257,10 +257,10 @@
           </div>
           
 
-          <div class="event2">
-            <div class="col col-md-3 mt-5 d-flex border-text-one text rounded  text-white mt-3 p-2 w-50 mb-2">
-              <div class="col-4 font-weight-bold h1 number">20</div>
-              <div class="col-2 text">AUGUST (TUESDAY)</div>
+          <div class="event2 col-lg-4 mt-lg-n5 pt-lg-2" data-aos="flip-left">
+            <div class="col col-md-3 col-lg-6 mt-5 d-flex border-text-one text rounded  text-white mt-3 p-2 w-50 mb-2">
+              <div class="col-4 col-lg-5 font-weight-bold h1 number">20</div>
+              <div class="col-2 col-lg">AUGUST (TUE)</div>
             </div>
             <div class="event-text donate-text-two">
               <h4 class="font-weight-bold">Digital Help for Language Volunteers</h4>
@@ -269,10 +269,10 @@
             </div>
           </div>
           
-          <div class="event3 mt-5">
-            <div class="col col-md-3 d-flex border-text-one text rounded  text-white mt-3 p-2 w-50 mb-2">
-              <div class="col-4 font-weight-bold h1 number">6</div>
-              <div class="col-2 text">SEPTEMBER (FRIDAY)</div>
+          <div class="event3 mt-5 col-lg-4 mt-lg-n3 pt-lg-1"data-aos="fade-up-left">
+            <div class="col col-md-3 col-lg-6 d-flex border-text-one text rounded text-white mt-3 p-2 w-50 mb-2">
+              <div class="col-4 col-lg-1 font-weight-bold h1 number">6</div>
+              <div class="col-2 col-lg">SEPTEMBER (FRI)</div>
             </div>
             <div class="event-text donate-text-two">
               <h4 class="font-weight-bold">World Humanitarian Day in the Shadow of Crises</h4>
@@ -287,43 +287,43 @@
       </div>
     </section>
 
-    <section class="about-us mt-5 pt-5">
-      <div class="container  donate-bg-two">
+    <section class="about-us donate-bg-two mt-5 pt-5 pb-md-5">
+      <div class="container">
         <div class="py-5 text-center">
           <h6 class="donate-bg-one p-2 w-100 text-white">STORY ABOUT US</h6>
           <h1 class="font-weight-bold donate-text-one">CHARITY DONORS</h1>
         </div>
         <div class="row">
-          <div class="card-deck">
-            <div class="card">
-              <img src="img/img1.jpg" class="card-img-top donation-profile" alt="...">
+          <div class="card-deck d-sm-block d-lg-flex m-sm-auto">
+            <div class="card col-md-10 m-md-auto" data-aos="zoom-in">
+              <img src="img/charity1.jpg" class="card-img-top donation-profile" alt="...">
               <div class="card-body donate-bg-two">
                 <h5 class="card-title">Donate to our Good Causes</h5>
                 <p class="card-text">Bill Gate</p>
                 <p class="card-text"><small class="text-muted">Donated (#200,000)</small></p>
               </div>
             </div>
-            <div class="card">
-              <img src="img/img2.jpg" class="card-img-top donation-profile" alt="...">
+            <div class="card col-md-10 m-md-auto" data-aos="flip-left">
+              <img src="img/charity3.jpg" class="card-img-top donation-profile" alt="...">
               <div class="card-body donate-bg-two">
                 <h5 class="card-title">Nigerian Refugee Crisis</h5>
-                <p class="card-text">George Benson</p>
+                <p class="card-text">Mitchelle Benson</p>
                 <p class="card-text"><small class="text-muted">Donated (#300,000)</small></p>
               </div>
             </div>
-            <div class="card">
-              <img src="img/img3.jpg" class="card-img-top donation-profile" alt="...">
+            <div class="card col-md-10 m-md-auto" data-aos="flip-right">
+              <img src="img/charity2.jpg" class="card-img-top donation-profile" alt="...">
               <div class="card-body donate-bg-two">
                 <h5 class="card-title">Education to Every Child</h5>
                 <p class="card-text">JOHN WICK</p>
                 <p class="card-text"><small class="text-muted">Donated (#1,000,000)</small></p>
               </div>
             </div>
-            <div class="card mb-5">
-              <img src="img/img4.jpg" class="card-img-top donation-profile" alt="...">
+            <div class="card col-md-10 m-md-auto mb-5" data-aos="fade-up-left">
+              <img src="img/charity4.jpg" class="card-img-top donation-profile" alt="...">
               <div class="card-body donate-bg-two">
-                <h5 class="card-title">Desperate for Shelter and Clean Water</h5>
-                <p class="card-text">Aliko Dangote</p>
+                <h5 class="card-title">Desperate for Shelte</h5>
+                <p class="card-text">ANNIE JOHNSON</p>
                 <p class="card-text"><small class="text-muted">Donated (#500,000)</small></p>
               </div>
             </div>
@@ -332,10 +332,15 @@
       </div>
     </section>
 
+      <!-- SCROLL-ICON -->
+    <div class="scroll-icon">
+      <i class="fa fa-chevron-circle-up"></i>
+    </div>
+
     <footer>
       <div class="container">
-        <div class=" py-5 donate-text-two">
-          <div class="row py-4">
+        <div class="row py-5 donate-text-two">
+          <div class="col-md-6 py-4">
             <div class="col-12 location d-flex">
               <div class="icon fa fa-map-marker pt-1 mx-2"></div>
               <h6 class="mt-1">Ikeja, Lagos, Nigeria</h6>
@@ -350,7 +355,7 @@
             </div>
           </div>
   
-          <div class="contact-us">
+          <div class="contact-us col-md-6">
             <form>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Email address:</label>
@@ -374,7 +379,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
-  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+  <script src="js/wow.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

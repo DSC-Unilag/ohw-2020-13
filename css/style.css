@@ -1,9 +1,10 @@
+/*  -------- HTML, BODY VALUES -------- */
 html, body {
     font-family: 'Poppins', sans-serif;
 	text-rendering: optimizeLegibility; 
     scroll-behavior: smooth;
 }
-
+/*  -------- NAVIGATION -------- */
 .navbar-light .navbar-brand { 
     color: #2F3C7E;
     text-shadow: 2px 2px #FBEAEB;
@@ -13,14 +14,14 @@ html, body {
 .navbar-light .navbar-nav .active>.nav-link { color: #2F3C7E;}
 .navbar-light .navbar-toggler { outline: none;}
 
-nav { height: ;
-     background-image: linear-gradient(to right, #FBEAEB, #2F3C7E);}
-
+nav {  background-image: linear-gradient(to right, #FBEAEB, #2F3C7E);}
+    
+/*  -------- MAIN -------- */
 main  {
     background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)),  url("/img/header-bg-img.jpg");
 	background-size: cover;
 	background-position: center;
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -48,17 +49,17 @@ main  {
     cursor: pointer;
 }
 
+/*  -------- REUSABLE COMPONENTS-------- */
 .donate-bg-one { background-color: #2F3C7E;}
 .donate-bg-two { background-color: #FBEAEB;}
-
 .donate-text-one, .card-title { color: #2F3C7E;}
 .donate-text-two { color: #FBEAEB;}
 
 .refugee-bg { 
     background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/refugee-bg.jpg");
-    /* background-size: cover; */
+    background-size: cover;
 	background-position: center;
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
     background-repeat: no-repeat;
     padding-bottom: 10rem;
 }
@@ -76,15 +77,40 @@ main  {
 }
 
 .upcoming-events { 
-    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/img2.jpg");
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/img2.jpg");
     background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
+ 
+/*  -------- SCROLL-TOP ICON -------- */
+.scroll-icon {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999999;
+  }
+  
+  .scroll-icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #2F3C7E;
+    transition: all 0.4s;
+  }
+  
+  .scroll-icon i:hover {  cursor: pointer;}
+
+/*  -------- FOOTER -------- */
+
 footer { 
-     background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/footer-bg-img.jpg");
+     background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/footer-bg-img.jpg");
      background-size: cover;
 	 background-position: center;
 	 background-attachment: fixed;
@@ -92,6 +118,3 @@ footer {
     }
 
 textarea { resize: none;}
-
-
-  
