@@ -1,10 +1,18 @@
 html, body {
-    /* color:#555; */
     font-family: 'Poppins', sans-serif;
 	text-rendering: optimizeLegibility; 
     scroll-behavior: smooth;
 	/* overflow-x: hidden; */
 }
+
+.navbar-light .navbar-brand { 
+    color: #2F3C7E;
+    text-shadow: 2px 2px #FBEAEB;
+}
+
+.navbar-light .navbar-nav .nav-link { color: #2F3C7E;}
+.navbar-light .navbar-nav .active>.nav-link { color: #2F3C7E;}
+.navbar-light .navbar-toggler { outline: none;}
 
 nav { height: ;
      background-image: linear-gradient(to right, #FBEAEB, #2F3C7E);}
@@ -45,10 +53,8 @@ main  {
 .donate-bg-one { background-color: #2F3C7E;}
 .donate-bg-two { background-color: #FBEAEB;}
 
-.donate-text-one { color: #2F3C7E;}
+.donate-text-one, .card-title { color: #2F3C7E;}
 .donate-text-two { color: #FBEAEB;}
-
-.text { color: #FBEAEB;}
 
 .refugee-bg { 
     background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/refugee-bg.jpg") center fixed no-repeat;
@@ -59,3 +65,16 @@ main  {
 }
 
 .img-donated-text {background-color: #FBEAEB;}
+
+.bg-progress{ background-color: #2F3C7E;}
+
+.volunteer-img { background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/volunteer.jpg") center fixed no-repeat;}
+
+.upcoming-events { background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/img2.jpg") center fixed no-repeat;}
+
+footer {  background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/footer-bg-img.jpg") center fixed no-repeat;}
+
+textarea { resize: none;}
+
+
+  

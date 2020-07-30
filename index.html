@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">NGO TEMPLATE</a>
+            <a class="navbar-brand font-weight-bold logo donate-text-one" href="#">NGO TEMPLATE</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,23 +21,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link donate-text-one" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#donate-now">Features</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Shortcodes
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Option 1</a>
-                    <a class="dropdown-item" href="#">Option 2</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Option 3</a>
-                  </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-us">About Us</a>
                 </li>
-               
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -62,14 +53,13 @@
                 <h5 class="m-auto">VIEW CAUSES</h5>
             </div>
         </div>
-        
     </main>
 
-    <section class="donate px-4 mt-n5">
+    <section class="donate px-4 mt-n4">
         <div class="container">
             <div class="row d-block d-md-flex justify-content-between">
                 <div class="col col-md-3 text-left px-5 mb-5 donate-bg-two">
-                    <div class="donate-test-one py-5">
+                    <div class="donate-test-one py-5" id="donate-now">
                         <h4 class="font-weight-bold py-3">DONATE NOW!</h4>
                         <p class="font-weight-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, expedita.</p>
                     </div>
@@ -101,63 +91,281 @@
         </div>
     </section>
 
-    <!-- <section>
-        <div class="container refugee-bg">
-            <div class="img-donated-text text-center p-5">
-                <div class="img-donated m-auto text-center pt-5">
-                    <img src="img/bg-img.jpg" class="h-25 w-50 text-center  rounded-circle" alt="">
-                </div>
-                <div>
-                    <h3>Nigerian Refugee Crisis</h3>
-                    <p class="font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi officiis eius architecto consequuntur nihil fugit, quo beatae iste obcaecati aperiam.</p>
-                </div>
-                <div class="spin">
-                    <div class="text-center">
-                        <div class="spinner-border" style="width: 3rem; height: 3rem" role="status">
-                          <span class="sr-only">50%</span>
-                        </div>
-                      </div>
-                </div>
-               
-            </div>
-
+    <section class="card-section pb-5 pt-5">
+        <div class=" container py-5 text-center" id="about-us">
+            <h6 class="donate-bg-one p-2 w-100 text-white">STORY ABOUT US</h6>
+            <h1 class="font-weight-bold donate-text-one">OUR CAUSES</h1>
         </div>
-        
-    </section> -->
-
-    <section class="card">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
+        <div id="carouselExampleIndicators" class="carousel slide mt-n5" data-ride="carousel">
+            <!-- <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
+            </ol> -->
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/header-bg-img.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/card1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/card2.jpg" class="d-block w-100" alt="...">
-              </div>
+                <div class="card-deck">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div>
+                                <img src="img/header-bg-img.jpg" class="card-img-top" alt="Card2">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Refugees and Migrants in Serbia</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi omnis facere, recusandae quas quisquam non id.</p>
+                            <p class="card-text"><small class="text-muted">Donated</small></p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-progress" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div>
+                                <img src="img/card1.jpg" class="card-img-top" alt="Card2">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Preparing to Help American Refugees</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi omnis facere, recusandae quas quisquam non id.</p>
+                            <p class="card-text"><small class="text-muted">Donated</small></p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-progress" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div>
+                                <img src="img/card2.jpg" class="card-img-top" alt="Card2">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Desperate for Shelter and Clean Water</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi omnis facere, recusandae quas quisquam non id.</p>
+                            <p class="card-text"><small class="text-muted">Donated</small></p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-progress" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon mt-n5" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon mt-n5" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
     </section>
 
+    <section class="volunteer">
+        <div class="volunteer-img">
+            <div class="container volunteer-text">
+                <div class="text-center pt-5">
+                    <h6 class="donate-bg-one p-2 w-100 text-white">BECOME A VOLUNTEER</h6>
+                    <h1 class="font-weight-bold donate-text-two">NO ONE HAS EVER BECOME POOR BY GIVING</h1>
+                    <p class="text-left p-4 donate-text-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure obcaecati impedit ipsa fugit a.</p>
+                </div>
+                <div class="donate-btn  p-4">
+                    <a href="#"><button class="border-text-two rounded p-2 donate-bg-one donate-text-two">GET INVOLVED NOW</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="card-section pt-5">
+        <div class=" container py-5 text-center">
+            <h6 class="donate-bg-one p-2 w-100 text-white">BE THE FIRST TO READ</h6>
+            <h1 class="font-weight-bold donate-text-one">LATEST NEWS</h1>
+        </div>
 
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <div>
+                    <img src="img/img4.jpg" class="card-img-top" alt="Card2">
+                  </div>
+                  <div class="card-header">May 5, 2020</div>
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Refugees and Migrants in Serbia</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi omnis facere, recusandae quas quisquam non id.</p>
+                    <p class="card-text"><small class="text-muted">Read More</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div>
+                    <img src="img/img2.jpg" class="card-img-top" alt="Card2">
+                  </div>
+                  <div class="card-header">January 20, 2020</div>
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Refugees and Migrants in Serbia</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi omnis facere, recusandae quas quisquam non id.</p>
+                    <p class="card-text"><small class="text-muted">Read More</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div>
+                    <img src="img/img1.jpg" class="card-img-top" alt="Card2">
+                  </div>
+                  <div class="card-header">May 25, 2020</div>
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Refugees and Migrants in Serbia</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi omnis facere, recusandae quas quisquam non id.</p>
+                    <p class="card-text"><small class="text-muted">Read More</small></p>
+                  </div>
+                </div>
 
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon mt-n5" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon mt-n5" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
 
+    <section class="upcoming-events py-5">
+      <div class="container">
+        <div class="event-header py-5 text-center">
+          <h6 class="donate-bg-one p-2 w-100 text-white">STORY ABOUT US</h6>
+          <h1 class="font-weight-bold donate-text-two">UPCOMING EVENTS</h1>
+        </div>
+        <div class="row d-block mx-auto">
+          <div class="event1">
+            <div class="col col-md-3 event1 d-flex border-text-one text rounded  text-white mt-3 p-2 w-50 mb-2">
+              <div class="col-4 font-weight-bold h1 number">15</div>
+              <div class="col-2 text">MAY (MONDAY)</div>
+            </div>
+            <div class="event-text donate-text-two">
+              <h4 class="font-weight-bold">Preparing to Help Young Central American Refugees</h4>
+              <span class="font-weight-light">July 10, 2020 - July 10, 2021</span> <br>
+              <span class="font-weight-light">Ikeja, Lagos, Nigeria</span>
+            </div>
+          </div>
+          
+
+          <div class="event2">
+            <div class="col col-md-3 mt-5 d-flex border-text-one text rounded  text-white mt-3 p-2 w-50 mb-2">
+              <div class="col-4 font-weight-bold h1 number">20</div>
+              <div class="col-2 text">AUGUST (TUESDAY)</div>
+            </div>
+            <div class="event-text donate-text-two">
+              <h4 class="font-weight-bold">Digital Help for Language Volunteers</h4>
+              <span class="font-weight-light">March 1, 2020 - March 20, 2021</span> <br>
+              <span class="font-weight-light">Ikeja, Lagos, Nigeria</span>
+            </div>
+          </div>
+          
+          <div class="event3 mt-5">
+            <div class="col col-md-3 d-flex border-text-one text rounded  text-white mt-3 p-2 w-50 mb-2">
+              <div class="col-4 font-weight-bold h1 number">6</div>
+              <div class="col-2 text">SEPTEMBER (FRIDAY)</div>
+            </div>
+            <div class="event-text donate-text-two">
+              <h4 class="font-weight-bold">World Humanitarian Day in the Shadow of Crises</h4>
+              <span class="font-weight-light">August 20, 2020 - October 20, 2020</span> <br>
+              <span class="font-weight-light">Ikeja, Lagos, Nigeria</span>
+            </div>
+          </div>
+        </div>
+        <div class="donate-btn  p-4">
+          <a href="#"><button class="border-text-two rounded p-2 donate-bg-one donate-text-two">VIEW ALL EVENTS</button></a>
+      </div>
+      </div>
+    </section>
+
+    <section class="about-us mt-5 pt-5">
+      <div class="container  donate-bg-two">
+        <div class="py-5 text-center">
+          <h6 class="donate-bg-one p-2 w-100 text-white">STORY ABOUT US</h6>
+          <h1 class="font-weight-bold donate-text-one">CHARITY DONORS</h1>
+        </div>
+        <div class="row">
+          <div class="card-deck">
+            <div class="card">
+              <img src="img/img1.jpg" class="card-img-top donation-profile" alt="...">
+              <div class="card-body donate-bg-two">
+                <h5 class="card-title">Donate to our Good Causes</h5>
+                <p class="card-text">Bill Gate</p>
+                <p class="card-text"><small class="text-muted">Donated (#200,000)</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/img2.jpg" class="card-img-top donation-profile" alt="...">
+              <div class="card-body donate-bg-two">
+                <h5 class="card-title">Nigerian Refugee Crisis</h5>
+                <p class="card-text">George Benson</p>
+                <p class="card-text"><small class="text-muted">Donated (#300,000)</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/img3.jpg" class="card-img-top donation-profile" alt="...">
+              <div class="card-body donate-bg-two">
+                <h5 class="card-title">Education to Every Child</h5>
+                <p class="card-text">JOHN WICK</p>
+                <p class="card-text"><small class="text-muted">Donated (#1,000,000)</small></p>
+              </div>
+            </div>
+            <div class="card mb-5">
+              <img src="img/img4.jpg" class="card-img-top donation-profile" alt="...">
+              <div class="card-body donate-bg-two">
+                <h5 class="card-title">Desperate for Shelter and Clean Water</h5>
+                <p class="card-text">Aliko Dangote</p>
+                <p class="card-text"><small class="text-muted">Donated (#500,000)</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class=" py-5 donate-text-two">
+          <div class="row py-4">
+            <div class="col-12 location d-flex">
+              <div class="icon fa fa-map-marker pt-1 mx-2"></div>
+              <h6 class="mt-1">Ikeja, Lagos, Nigeria</h6>
+            </div>
+            <div class="col-12 offers d-flex">
+              <div class="icon fa fa-envelope pt-1 mx-2"></div>
+              <h6 class="mt-1">ohw13@gmail.com</h6>
+            </div>
+            <div class="col-12 d-flex">
+              <div class="icon fa fa-phone pt-1 mx-2"></div>
+              <h6 class="mt-1">080 0101 0101</h6>
+            </div>
+          </div>
+  
+          <div class="contact-us">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address:</label>
+                <input type="email" class="form-control donate-bg-two" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message:</label>
+                <textarea class="form-control donate-bg-two resize-none" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
     
 
 
