@@ -10,12 +10,12 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class DevelopmentConfig(Config):
-    SQALCHEMY_DATABASE_URI = f"sqlite:///{basedir}/ohw13Dev.sqlite"
+    SQLALCHEMY_DATABASE_URI = f"sqlite:///{basedir}/ohw13Dev.sqlite"
     FLASK_ENV='development'
     DEBUG=True
 
 class TestingConfig(Config):
-    SQALCHEMY_DATABASE_URI = f"sqlite:///{basedir}/ohw13Test.sqlite"
+    SQLALCHEMY_DATABASE_URI = f"sqlite:///{basedir}/ohw13Test.sqlite"
     FLASK_ENV='testing'
     DEBUG=True
 
