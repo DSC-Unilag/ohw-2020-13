@@ -3,6 +3,7 @@ html, body {
     font-family: 'Poppins', sans-serif;
 	text-rendering: optimizeLegibility; 
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 /*  -------- NAVIGATION -------- */
 .navbar-light .navbar-brand { 
