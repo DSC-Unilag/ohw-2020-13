@@ -72,7 +72,7 @@ main  {
 
 .upcoming-events { background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/img2.jpg") center fixed no-repeat;}
 
-footer {  background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/footer-bg-img.jpg") center fixed no-repeat;}
+footer {  background: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/footer-bg-img.jpg") center fixed no-repeat;}
 
 textarea { resize: none;}
 
