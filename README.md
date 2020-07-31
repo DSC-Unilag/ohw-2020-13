@@ -10,4 +10,4 @@ NGOs get to configure their websites using pre-defined templates.
 [Paul Asalu](GitHub.com/curiousPaul1) &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; Back-End Developer  
 [Tiaraoluwanimi Olamide Makinde](GitHub.com/TiaraOluwanimi) &nbsp; Front-End Developer  
 [Oluwasesanfunmi Takuro](GitHub.com/The-KS101) &emsp; &emsp; &emsp; &nbsp; Back-End Developer   
-[Olasubomi Olorunsola](GitHub.com/Jollof-guy) &emsp; &emsp; &emsp; &emsp; &nbsp; Front-End Developer  
+[Olasubomi Olorunsola](GitHub.com/Jollof-guy) &emsp; &emsp; &emsp; &emsp;&nbsp; Front-End Developer  
