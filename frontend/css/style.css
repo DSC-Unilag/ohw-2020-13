@@ -38,7 +38,7 @@ main  {
     outline: none!important;
 }
 
-.border-text-one:hover {
+.border-text-one:hover, .button:hover {
     background-color: #2F3C7E;
     color: #FBEAEB;
     cursor: pointer;
@@ -82,7 +82,9 @@ main  {
     background-repeat: no-repeat;
 }
 
- 
+.previous-icon1, .previous-icon2, .previous-icon3 { display: none;}
+.next-icon1, .next-icon2, .next-icon3 { display: none;}
+
 /*  -------- SCROLL-TOP ICON -------- */
 .scroll-icon {
     position: fixed;
