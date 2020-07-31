@@ -21,6 +21,7 @@ html, body {
 .navbar-light .navbar-toggler { outline: none;}
 .navbar-light .navbar-nav .nav-link:hover { 
     color: #2F3C7E;
+    font-weight: 700;
     border-bottom: 2px solid #2F3C7E;
 }
 
