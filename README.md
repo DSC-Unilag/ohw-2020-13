@@ -1,5 +1,4 @@
-Open Hack Week 2020  **Team 13**  
--------------------
+## Open Hack Week 2020   **(Team 13)**  
 
 Project - NGO Website Builder  
 : This assists Non-Governmental Organisations in building an online presence through creation of websites.  
