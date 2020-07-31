@@ -20,7 +20,7 @@ nav {  background-image: linear-gradient(to right, #FBEAEB, #2F3C7E);}
     
 /*  -------- MAIN -------- */
 main  {
-    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)),  url("/img/header-bg-img.jpg");
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)),  url("../img/header-bg-img.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -58,7 +58,7 @@ main  {
 .donate-text-two { color: #FBEAEB;}
 
 .refugee-bg { 
-    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/refugee-bg.jpg");
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/refugee-bg.jpg");
     background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -71,7 +71,7 @@ main  {
 .bg-progress{ background-color: #2F3C7E;}
 
 .volunteer-img { 
-    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/volunteer.jpg");
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/volunteer.jpg");
     background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -79,7 +79,7 @@ main  {
 }
 
 .upcoming-events { 
-    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/img2.jpg");
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/img2.jpg");
     background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -112,7 +112,7 @@ main  {
 /*  -------- FOOTER -------- */
 
 footer { 
-     background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("/img/footer-bg-img.jpg");
+     background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/footer-bg-img.jpg");
      background-size: cover;
 	 background-position: center;
 	 background-attachment: fixed;
