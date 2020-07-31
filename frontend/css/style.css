@@ -12,9 +12,17 @@ html, body {
     text-shadow: 2px 2px #FBEAEB;
 }
 
+.navbar-light .navbar-brand:hover {  color: #2F3C7E;}
+   
+
+
 .navbar-light .navbar-nav .nav-link { color: #2F3C7E;}
 .navbar-light .navbar-nav .active>.nav-link { color: #2F3C7E;}
 .navbar-light .navbar-toggler { outline: none;}
+.navbar-light .navbar-nav .nav-link:hover { 
+    color: #2F3C7E;
+    border-bottom: 2px solid #2F3C7E;
+}
 
 nav {  background-image: linear-gradient(to right, #FBEAEB, #2F3C7E);}
     
