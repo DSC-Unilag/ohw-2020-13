@@ -7,7 +7,7 @@ NGOs get to configure their websites using pre-defined templates.
 **Members of Team 13**  
 > Front-End Developers  
 [Samuel Ogunleye](GitHub.com/Sproff)  
-[Tiaraoluwanimi Olamide Makinde](GitHub.com/TiaraOluwanimi) 
+[Tiaraoluwanimi Olamide Makinde](GitHub.com/TiaraOluwanimi)  
 [Olasubomi Olorunsola](GitHub.com/Jollof-guy)  
 
 > Back-End Developers  
