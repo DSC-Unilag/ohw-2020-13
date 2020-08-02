@@ -8,6 +8,7 @@ NGOs get to configure their websites using pre-defined templates.
 > Front-End Developers  
 [Samuel Ogunleye](https://GitHub.com/Sproff)  
 [Olamide Makinde](https://GitHub.com/TiaraOluwanimi)  
+[Favour Oyewumi](https://GitHub.com/FavourOyewumi7)  
 [Olasubomi Olorunsola](https://GitHub.com/Jollof-guy)  
 
 > Back-End Developers  
