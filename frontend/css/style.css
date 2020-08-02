@@ -1,0 +1,127 @@
+/*  -------- HTML, BODY VALUES -------- */
+html, body {
+    font-family: 'Poppins', sans-serif;
+	text-rendering: optimizeLegibility; 
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*  -------- NAVIGATION -------- */
+.navbar-light .navbar-brand { 
+    color: #2F3C7E;
+    text-shadow: 2px 2px #FBEAEB;
+}
+
+.navbar-light .navbar-brand:hover {  color: #2F3C7E;}
+   
+
+
+.navbar-light .navbar-nav .nav-link { color: #2F3C7E;}
+.navbar-light .navbar-nav .active>.nav-link { color: #2F3C7E;}
+.navbar-light .navbar-toggler { outline: none;}
+.navbar-light .navbar-nav .nav-link:hover { 
+    color: #2F3C7E;
+    font-weight: 700;
+}
+
+nav {  background-image: linear-gradient(to right, #FBEAEB, #2F3C7E);}
+    
+/*  -------- MAIN -------- */
+main  {
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)),  url("../img/header-bg-img.jpg");
+	background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.border-text-one { 
+    border: 1px solid #2F3C7E;
+    outline: none!important;
+}
+
+.border-text-two { 
+    border: 1px solid #FBEAEB;
+    outline: none!important;
+}
+
+.border-text-one:hover, .button:hover {
+    background-color: #2F3C7E;
+    color: #FBEAEB;
+    cursor: pointer;
+}
+
+.border-text-two:hover {
+    background-color: #FBEAEB;
+    color: #2F3C7E;
+    cursor: pointer;
+}
+
+/*  -------- REUSABLE COMPONENTS-------- */
+.donate-bg-one { background-color: #2F3C7E;}
+.donate-bg-two { background-color: #FBEAEB;}
+.donate-text-one, .card-title { color: #2F3C7E;}
+.donate-text-two { color: #FBEAEB;}
+
+.refugee-bg { 
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/refugee-bg.jpg");
+    background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
+}
+
+.img-donated-text {background-color: #FBEAEB;}
+
+.bg-progress{ background-color: #2F3C7E;}
+
+.volunteer-img { 
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/volunteer.jpg");
+    background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+}
+
+.upcoming-events { 
+    background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/img2.jpg");
+    background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+}
+
+.previous-icon1, .previous-icon2, .previous-icon3 { display: none;}
+.next-icon1, .next-icon2, .next-icon3 { display: none;}
+
+/*  -------- SCROLL-TOP ICON -------- */
+.scroll-icon {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999999;
+  }
+  
+  .scroll-icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #2F3C7E;
+    transition: all 0.4s;
+  }
+  
+  .scroll-icon i:hover {  cursor: pointer;}
+
+/*  -------- FOOTER -------- */
+
+footer { 
+     background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)), url("../img/footer-bg-img.jpg");
+     background-size: cover;
+	 background-position: center;
+     background-repeat: no-repeat;
+    }
+
+textarea { resize: none;}
