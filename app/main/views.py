@@ -71,6 +71,7 @@ def login_required(f):
     return function
 
 @main.route('/dashboard',methods=['POST','GET'])
+@login_required
 def dashboard():
     pass
     
