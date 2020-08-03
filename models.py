@@ -1,11 +1,13 @@
-from run import db
+#from run import db
+from app import db
 
 class Admin(db.Model):
     id = db.Column(db.Integer,primary_key=True)
     first_name = db.Column(db.String(100))
     last_name = db.Column(db.String(100))
-    email = db.Column(db.String(200))
+    email = db.Column(db.String(200),unique=True)
     password = db.Column(db.String(100))
+    admin_id = db.Column(db.String(200),unique=True)
     site_data = db.relationship('Config',backref='ngo-admin',uselist=False)
 
 class Config(db.Model):
