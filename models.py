@@ -1,5 +1,4 @@
-#from run import db
-from app import db
+from app.extensions import db
 
 class Admin(db.Model):
     id = db.Column(db.Integer,primary_key=True)
@@ -19,9 +18,14 @@ class Config(db.Model):
 
 class Content(db.Model):
     id = db.Column(db.Integer,primary_key=True)
-
-    ## content goes here
-
+    header_image = db.Column(db.String(200))
+    about_image = db.Column(db.String(200))
+    carousel_images = db.Column(db.PickleType)
+    volunteers = db.Column(db.PickleType)
+    carousel_info = db.Column(db.PickleType)
+    about_info = db.Column(db.Text)
+    nav_bar = db.Column(db.PickleType)
+    header_info = db.Column(db.PickleType)
     config_id = db.Column(db.Integer,db.ForeignKey('config.id'))
 
     

@@ -1,9 +1,9 @@
-from app import create_app,db
+from app import __call__
+from app.extensions import db
 from flask_migrate import Migrate
-from flask_sqlalchemy import SQLAlchemy
 import os
 
-app = create_app('default' or os.getenv('FLASK_CONFIG'))
+app = __call__('default' or os.getenv('FLASK_CONFIG'))
 migrate = Migrate(app,db)
 
 @app.shell_context_processor

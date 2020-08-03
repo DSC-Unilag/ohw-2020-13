@@ -1,8 +1,7 @@
 from . import main
 from flask import render_template,redirect,flash,url_for,request,make_response,session
 from flask import current_app as app
-from flask_bcrypt import Bcrypt
-from app import bcrypt
+from app.extensions import db,bcrypt
 from models import Admin
 from sqlalchemy.exc import IntegrityError
 from functools import wraps
