@@ -92,13 +92,19 @@
      background-repeat: no-repeat;
      background-size: cover; 
      background-position: center;
+     
      height: 500px; 
     position: relative;
     font-family: 'Tajawal', sans-serif;
 
     
 }
+.set{
+    height: 100%;
+    width: 100%;
+    background:  rgba(0, 0, 0, 0.65);
 
+}
 
 .wording1{
     position: absolute;
@@ -107,8 +113,8 @@
     left: 50%;
     transform:translate(-50%, -50%); 
     color: #fff;
-    background: rgba(0, 0, 0, 0.65); 
-   
+    
+    
     height: 100;   
 }
 .wording1 h1{
