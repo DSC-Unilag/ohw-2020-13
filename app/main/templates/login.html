@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OHW-NGO Sign-In</title>
+	<link rel="stylesheet" href="{{url_for('main.static',filename='base.css')}}">
+	<link rel="stylesheet" href="{{url_for('main.static',filename='style.css')}}">
+</head>
+<body>
+	<div class='topbar'>
+		<h1 class='logo'>NGO Website Builder</h1>
+	</div>
+	<p class='form-head'>Sign In</p>
+	<form class='form' action="admin.html">
+		<div class="form-group">
+			<label for="email">Username </label>
+			<input class='form-control' id='email' type="email" required>
+		</div>
+		<div class="form-group">
+			<label for="password">Password  </label>
+			<input class='form-control' id='password' type="password" required>
+		</div>
+		<div class="submit">
+			<button class="btn">Sign In</button>
+		</div>
+		<br>
+		<div>
+			<p> <em> Don't have an Account? </em> <a href="{{url_for('main.signup')}}"> Register </a> </p> 
+		</div>
+	</form>
+
+</body>
+</html>
