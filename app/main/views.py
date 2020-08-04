@@ -39,14 +39,14 @@ def login():
         user = Admin.query.filter_by(email=email).first()
         if not user:
             flash(u"No such user found",'error')
-            return render_template('login.html',error),404
+            return render_template('login.html'),404
         else:
             if bcrypt.check_password_hash(user.password,password):
                 session.permanent = True
                 session['admin_id'] = user.admin_id
                 return redirect(url_for('main.dashboard')),200
             flash(u'Incorrect Password','error')
-            return render_template('login.html',error),400
+            return render_template('login.html'),400
 
 
 # Authorization decorator

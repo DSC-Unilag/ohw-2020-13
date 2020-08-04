@@ -3,7 +3,8 @@ from app.extensions import db
 from flask_migrate import Migrate
 import os
 
-app = __call__('default' or os.getenv('FLASK_CONFIG'))
+app = __call__(os.getenv('FLASK_CONFIG') or 'default')
+
 migrate = Migrate(app,db)
 
 @app.shell_context_processor
