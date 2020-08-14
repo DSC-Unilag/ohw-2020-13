@@ -27,7 +27,7 @@ def signup():
     elif request.method == 'GET':
         return render_template('signup.html'),200
 
-@main.route('/login',methods=['POST'])
+@main.route('/login',methods=['GET','POST'])
 def login():
     if request.method == 'GET':
         return render_template('login.html')
