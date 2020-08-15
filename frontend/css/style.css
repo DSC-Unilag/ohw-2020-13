@@ -22,6 +22,7 @@ html, body {
 .navbar-light .navbar-nav .nav-link:hover { 
     color: #2F3C7E;
     border-bottom: 2px solid #2F3C7E;
+    font-weight: 700;
 }
 
 nav {  background-image: linear-gradient(to right, #FBEAEB, #2F3C7E);}

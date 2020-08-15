@@ -1,0 +1,222 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* Section-header*/
+#nav-tag{
+    background-image: url(./trevor-cole-CWcAsKuhwy0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.nav-tag2{
+    height: 100%;
+    width: 100%;
+    background:  rgba(0, 0, 0, 0.65);
+
+}
+
+.nav-name{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    left: 50%;
+    transform:translate(-50%, -50%); 
+}
+.nav-logo{
+    padding: 6px 10px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.nav-list li{
+    display: inline;
+    list-style-type: none;
+    padding: 0px 10px;
+    margin-left: 10px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.nav-list li a:hover{
+    font-weight: bolder;
+}
+.nav-list li button{
+    padding: 10px 25px;
+    background-color: #F9AED2;
+    color: #6D0839;
+    border: none;
+    border-radius: 16px;
+}
+.header-note{
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.notes{
+    font-size: 30px;
+}
+
+.notes h1{
+    padding: 10px;
+    
+}
+.notes button{
+    padding: 10px 25px;
+    background-color: #F9AED2;
+    color: #6D0839;
+    border: none;
+    border-radius: 16px;
+}
+
+/*Section-2*/
+#section2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 40px;
+    height: 500px;
+    margin: 50px 40px;
+}
+
+.section2img{
+    width: inherit;
+    height: inherit;
+}
+.section2img img{
+    height: 400px;
+    width:350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+
+}
+.about h1{
+    color: #6D0839;
+}
+
+/*Section3*/
+#section3{
+    height: 400px;
+    background: linear-gradient(180deg, rgba(254, 241, 247, 0) 0%, #FEF1F7 100%);
+    margin: 50px 40px;
+    
+}
+#section3 h1{
+    color: #6D0839;
+    margin-bottom: 20px;
+    
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    color: WHITE;
+    
+
+}
+
+.card1{
+    background-image: url(./annie-spratt-QdK6aujOLYs-unsplash.jpg);
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px;
+    
+    
+}
+
+.card-info{
+    position: absolute;
+    left: 0;
+    bottom:0%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+.card-info p{
+    font-weight: bolder;
+}
+.card-info button{
+    padding: 5px 15px;
+    background-color: #F9AED2;
+    color: #6D0839;
+    border: none;
+    border-radius: 4px;
+
+}
+/* Section 4 */
+
+#section4{
+   height: 300px;
+   margin: 50px 40px;
+   background: linear-gradient(180deg, rgba(254, 241, 247, 0) 0%, #FEF1F7 100%);
+}
+
+#section4 h1{
+    color: #6D0839;
+    margin-bottom: 20px ;
+    text-align: center;
+}
+.grid-class{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    align-content: center;
+}
+.grid-list{
+    
+    border-radius: 10px;
+}
+.grid-list button{
+    padding: 5px 15px;
+    background-color: #F9AED2;
+    color: #6D0839;
+    border: none;
+    border-radius: 4px;
+}
+/*footer*/
+#footer{
+    background-color: #18020C;
+    color: white;
+    height: 300px;
+    
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 100px;
+    margin: 50px 40px;
+}
+.footer-lists button{
+    padding: 5px 15px;
+    background-color: #F9AED2;
+    color: #6D0839;
+    border: none;
+    border-radius: 4px;
+}
+.footer-lists li{
+    list-style-type: none;
+}
+.footer-lists li a{
+    text-decoration: none;
+    color: white;
+}
