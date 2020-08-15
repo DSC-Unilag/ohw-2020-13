@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
-	<link href="{{url_for('main.static',filename='bootstrap.min.css')}}" rel="stylesheet">
-	<link href="{{url_for('main.static',filename='gsdk-bootstrap-wizard.css')}}" rel="stylesheet">
-	<link rel="stylesheet" href="{{url_for('main.static',filename='style.css')}}">
+	<link href="{{url_for('main.static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{url_for('main.static',filename='css/gsdk-bootstrap-wizard.css')}}" rel="stylesheet">
+	<link rel="stylesheet" href="{{url_for('main.static',filename='css/style.css')}}">
 	<title>DASHBOARD</title>
 </head>
 
-<body>
+<body class=" site-builder-bg">
 
 	<!--   Big container   -->
 	<div class="container">
@@ -26,7 +26,7 @@
 						<form action="" method="">
 							<div class="wizard-header donate-text-one">
 								<h3>
-									<b>COMPLETE</b> YOUR REGISTRATION<br>
+									<b>SITE </b> BUILDER<br>
 									<small>This information will let us know more about you.</small>
 								</h3>
 							</div>
@@ -45,7 +45,7 @@
 										<div class="col-sm-4 col-sm-offset-1">
 											<div class="picture-container">
 												<div class="picture">
-													<img src="././frontend/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title="" />
+													<img src="{{url_for('main.static',filename='img/default-avatar.png')}}" class="picture-src" id="wizardPicturePreview" title="" />
 													<input type="file" id="wizard-picture">
 												</div>
 												<h6>Choose Website Logo</h6>
@@ -178,11 +178,11 @@
 	</div>
 
 	<!--JS Files -->
-	<script src="{{url_for('main.static',filename='scripts/jquery-2.2.4.min.js')}}" type="text/javascript"></script>
-	<script src="{{url_for('main.static',filename='scripts/bootstrap.min.js')}}" type="text/javascript"></script>
-	<script src="{{url_for('main.static',filename='scripts/jquery.bootstrap.wizard.js')}}" type="text/javascript"></script>
-	<script src="{{url_for('main.static',filename='scripts/gsdk-bootstrap-wizard.js')}}"></script>
-	<script src="{{url_for('main.static',filename='scripts/jquery-2.2.4.min.js')}}"></script>
+	<script src="{{url_for('main.static',filename='js/jquery-2.2.4.min.js')}}" type="text/javascript"></script>
+	<script src="{{url_for('main.static',filename='js/bootstrap.min.js')}}" type="text/javascript"></script>
+	<script src="{{url_for('main.static',filename='js/jquery.bootstrap.wizard.js')}}" type="text/javascript"></script>
+	<script src="{{url_for('main.static',filename='js/gsdk-bootstrap-wizard.js')}}"></script>
+	<script src="{{url_for('main.static',filename='js/jquery.validate.min.js')}}"></script>
 </body>
 
 </html>
