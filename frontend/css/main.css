@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+  }
+  
+  
+  html,
+  body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #555;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  
+
+  /*--- HEADER ---*/
+  .navbar-light .navbar-brand {
+    color: #2F3C7E;
+    text-shadow: 5px 5px #FBEAEB;
+}
+
+  .navbar-light .navbar-nav .active>.nav-link { color: #2F3C7E;}
+  .navbar-light .navbar-nav .nav-link { color: #2F3C7E;}
+    
+  .navbar {
+    box-shadow: 0px 2px 10px hsl(229, 6%, 66%);
+    background-color: #fff;
+    font-size: 1.1em;
+  }
+  
+  .welc-section {
+    line-height: 2;
+  }
+  
+  .ngo {color:  #2F3C7E; }
+
+.donate-bg-one { background-color: #2F3C7E;}
+.donate-bg-two { background-color: #FBEAEB;}
+.donate-text-one { color: #2F3C7E;}
+.donate-text-two { color: #FBEAEB;}
+
+  .btn-welc-section:hover {  background-color: #2c3566;}
+  
+  .image { opacity: 0.9;}
+  
+  footer {
+    border-top: 5px solid #2F3C7E;
+    width: 100%;
+  }
+  
