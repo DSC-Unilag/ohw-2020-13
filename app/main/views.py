@@ -20,6 +20,8 @@ def signup():
         try:
             db.session.flush(objects=[new_admin])
             db.session.commit()
+            flash(u'Welcome, Signup Complete - Login please','success')
+            return redirect(url_for('main.login')),200
         except IntegrityError:
             db.session.rollback()
             error = 'User Already Exists'
@@ -31,7 +33,7 @@ def signup():
 def login():
     if request.method == 'GET':
         return render_template('login.html')
-    else:
+    elif request.method == 'POST':
         # fetch login details
         email = request.form['email']
         password = request.form['password']
@@ -72,5 +74,6 @@ def login_required(f):
 @main.route('/dashboard',methods=['POST','GET'])
 @login_required
 def dashboard():
-    pass
+    if request.method == 'GET':
+        return render_template('dashboard.html'),200
     
