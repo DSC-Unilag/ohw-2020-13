@@ -1,38 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8" >
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>OHW-NGO Register</title>
-	<link rel="stylesheet" href="{{url_for('main.static',filename='base.css')}}">
-	<link rel="stylesheet" href="{{url_for('main.static',filename='style.css')}}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('main.static',filename='login.css')}}">
+    <title>NGO Site Builder | Login Page</title>
 </head>
+
 <body>
-	<div class='topbar'>
-		<h1 class='logo'>NGO Website Builder</h1>
-	</div>
-	<p class='form-head'>Register</p>
-	<form class='form' action="admin.html">
-		<div class="form-group">
-			<label for="email">Email Address </label>
-			<input class='form-control' id='email' type="email" required>
-		</div>
-		<div class="form-group">
-			<label for="password">Set Password  </label>
-			<input class='form-control' id='password' type="password" required>
+    <div class="mainbody">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                    <div class="card card-signin my-5">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Sign Up</h5>
+                            <p>Note: All fields are required</p>
+                            <form class="form-signin" name="loginForm" id="loginForm" method="POST" action="/app/signup">
+                                <div class="form-label-group">
+                                    <input type="text" id="inputEmail" class="form-control" placeholder="First Name"
+                                        required autofocus name="firstName">
+                                    <label for="inputEmail">First Name</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="text" id="inputEmail" class="form-control" placeholder="Last Name"
+                                        required autofocus name="lastName">
+                                    <label for="inputEmail">Last Name</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
+                                        required autofocus name="email">
+                                    <label for="inputEmail">Email address</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="password" id="inputPassword" class="form-control"
+                                        placeholder="Password" required name="password">
+                                    <label for="inputPassword">Password</label>
+                                </div>
+
+                                <button class="btn btn-lg btn-loginbbtn btn-block text-uppercase" id="submitloginAcc"
+                                    type="submit">SIGN UP</button>
+
+                            </form>
+                            <p class="text-center">Already have an Account?<a href="{{url_for('main.login')}}"> Log In</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-			<label for="password">Confirm Password  </label>
-			<input class='form-control' id='confirm_password' type="password" required>
-        </div>
-		<div class="submit">
-			<button class="btn">Register</button>
-		</div>
-		<br>
-		<div>
-			<p> <em> Already have an Account? </em> <a href="{{url_for('main.login')}}"> Sign In </a> </p> 
-		</div>
-	</form>
+
+    </div>
+
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+
 </html>
