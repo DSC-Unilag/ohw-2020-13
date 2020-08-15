@@ -1,4 +1,6 @@
-
+.site-builder-bg {
+  background-image: linear-gradient(rgba(27, 28, 82, 0.7), rgba(0, 0, 0, 0.7)),  url("../img/header-bg-img.jpg");
+}
 /*           Animations              */
 .form-control, .input-group-addon {
   -webkit-transition: all 300ms linear;
