@@ -1,186 +1,188 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
-  <link href="{{url_for('static',filename='bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{url_for('static',filename='gsdk-bootstrap-wizard.css')}}" rel="stylesheet">
-  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
-  <title>DASHBOARD</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+	<link href="{{url_for('main.static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{url_for('main.static',filename='css/gsdk-bootstrap-wizard.css')}}" rel="stylesheet">
+	<link rel="stylesheet" href="{{url_for('main.static',filename='css/style.css')}}">
+	<title>DASHBOARD</title>
 </head>
 
-<body>
+<body class=" site-builder-bg">
 
-    <!--   Big container   -->
-    <div class="container">
-        <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+	<!--   Big container   -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
 
-            <!--      Wizard container        -->
-            <div class="wizard-container">
+				<!--      Wizard container        -->
+				<div class="wizard-container">
 
-                <div class="card wizard-card" data-color="orange" id="wizardProfile">
-                    <form action="" method="">
-                    	<div class="wizard-header donate-text-one">
-                        	<h3>
-                        	   <b>COMPLETE</b> YOUR REGISTRATION<br>
-                        	   <small>This information will let us know more about you.</small>
-                        	</h3>
-                    	</div>
+					<div class="card wizard-card" data-color="orange" id="wizardProfile">
+						<form method="POST">
+							<div class="wizard-header donate-text-one">
+								<h3>
+									<b>SITE </b> BUILDER<br>
+									<small>This information will let us know more about you.</small>
+								</h3>
+							</div>
 
-						    <div class="wizard-navigation">
-							        <ul>
-	                        <li><a href="#about" data-toggle="tab">STEP 1</a></li>
-	                        <li><a href="#account" data-toggle="tab">STEP 2</a></li>
-	                    </ul>
-						    </div>
+							<div class="wizard-navigation">
+								<ul>
+									<li><a href="#about" data-toggle="tab">STEP 1</a></li>
+									<li><a href="#account" data-toggle="tab">STEP 2</a></li>
+								</ul>
+							</div>
 
-                        <div class="tab-content">
-                            <div class="tab-pane" id="about">
-                              <div class="row">
-                                  <h4 class="info-text">Website Details</h4>
-                                  <div class="col-sm-4 col-sm-offset-1">
-                                     <div class="picture-container">
-                                          <div class="picture">
-                                              <img src="././frontend/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
-                                              <input type="file" id="wizard-picture">
-                                          </div>
-                                          <h6>Choose Website Logo</h6>
-                                      </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                      <div class="form-group">
-                                        <label>Full Name <b class="text-danger">*</b></label>
-                                        <input name="firstname" type="text" class="form-control" placeholder="Ohw">
-                                      </div>
-                                      <div class="form-group">
-                                        <label>Website Name <b class="text-danger">*</b></label>
-                                        <input name="lastname" type="text" class="form-control" placeholder="Sam">
-                                      </div>
-                                  </div>
-                                  <div class="col-sm-10 col-sm-offset-1">
-                                      <div class="form-group">
-                                          <label>Admin ID <b class="text-danger">*</b></label>
-                                          <input name="number" type="number" class="form-control" placeholder="10001">
-                                      </div>
-                                  </div>
-                                  <div class="col-sm-10 col-sm-offset-1">
-                                    <div class="form-group">
-                                        <label>Content <b class="text-danger">*</b></label>
-                                        <input name="text" type="text" class="form-control" placeholder="message">
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="tab-pane" id="account">
-                                <h4 class="info-text">Create your Site</h4>
-                                <div class="row">
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="form-group mx-auto">
-                                          <label>ID<b class="text-danger">*</b></label>
-                                          <input name="number" type="text" class="form-control" placeholder="10002">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <form>
-                                            <div class="form-group">
-                                              <label for="exampleFormControlFile1">Header Image <b class="text-danger">*</b></label>
-                                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                                            </div>
-                                          </form>
-                                    </div>
-                                     <div class="col-sm-10 col-sm-offset-1">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Header Info <b class="text-danger">*</b></label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Navigation Bar <b class="text-danger">*</b></label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="form-group">
-                                            <form>
-                                                <div class="form-group">
-                                                  <label for="exampleFormControlFile1">About Image <b class="text-danger">*</b></label>
-                                                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">About Info <b class="text-danger">*</b></label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                
-                            <div class="tab-pane" id="address">
-                                <div class="row">
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="form-group">
-                                            <form>
-                                                <div class="form-group">
-                                                  <label for="exampleFormControlFile1">Carousel Images <b class="text-danger">*</b></label>
-                                                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Carousel Info <b class="text-danger">*</b></label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="form-group">
-                                            <label>Volunteers <b class="text-danger">*</b></label>
-                                            <input name="firstname" type="text" class="form-control" placeholder="John Doe">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wizard-footer height-wizard">
-                            <div class="pull-right">
-                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
-                                <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='Finish' />
+							<div class="tab-content">
+								<div class="tab-pane" id="about">
+									<div class="row">
+										<h4 class="info-text">Website Details</h4>
+										<div class="col-sm-4 col-sm-offset-1">
+											<div class="picture-container">
+												<div class="picture">
+													<img src="{{url_for('main.static',filename='img/default-avatar.png')}}" class="picture-src" id="wizardPicturePreview" title="" />
+													<input type="file" id="wizard-picture">
+												</div>
+												<h6>Choose Website Logo</h6>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label>Full Name <b class="text-danger">*</b></label>
+												<input name="firstname" type="text" class="form-control" placeholder="Ohw">
+											</div>
+											<div class="form-group">
+												<label>Website Name <b class="text-danger">*</b></label>
+												<input name="lastname" type="text" class="form-control" placeholder="Sam">
+											</div>
+										</div>
+										<div class="col-sm-10 col-sm-offset-1">
+											<div class="form-group">
+												<label>Admin ID <b class="text-danger">*</b></label>
+												<input name="number" type="number" class="form-control" placeholder="10001">
+											</div>
+										</div>
+										<div class="col-sm-10 col-sm-offset-1">
+											<div class="form-group">
+												<label>Content <b class="text-danger">*</b></label>
+												<input name="text" type="text" class="form-control" placeholder="message">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="account">
+									<h4 class="info-text">Create your Site</h4>
+									<div class="row">
+										<div class="col-sm-10 col-sm-offset-1">
+											<div class="form-group mx-auto">
+												<label>ID<b class="text-danger">*</b></label>
+												<input name="number" type="text" class="form-control" placeholder="10002">
+											</div>
+										</div>
+										<div class="col-sm-10 col-sm-offset-1">
+											<form>
+												<div class="form-group">
+													<label for="exampleFormControlFile1">Header Image <b class="text-danger">*</b></label>
+													<input type="file" class="form-control-file" id="exampleFormControlFile1">
+												</div>
+											</form>
+										</div>
+										<div class="col-sm-10 col-sm-offset-1">
+											<form>
+												<div class="form-group">
+													<label for="exampleFormControlTextarea1">Header Info <b class="text-danger">*</b></label>
+													<textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+												</div>
+											</form>
+										</div>
+										<div class="col-sm-10 col-sm-offset-1">
+											<form>
+												<div class="form-group">
+													<label for="exampleFormControlTextarea1">Navigation Bar <b class="text-danger">*</b></label>
+													<textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+												</div>
+											</form>
+										</div>
+										<div class="col-sm-10 col-sm-offset-1">
+											<div class="form-group">
+												<form>
+													<div class="form-group">
+														<label for="exampleFormControlFile1">About Image <b class="text-danger">*</b></label>
+														<input type="file" class="form-control-file" id="exampleFormControlFile1">
+													</div>
+												</form>
+											</div>
+										</div>
+										<div class="col-sm-10 col-sm-offset-1">
+											<form>
+												<div class="form-group">
+													<label for="exampleFormControlTextarea1">About Info <b class="text-danger">*</b></label>
+													<textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+												</div>
+											</form>
+										</div>
+									</div>
 
-                            </div>
+									<div class="tab-pane" id="address">
+										<div class="row">
+											<div class="col-sm-10 col-sm-offset-1">
+												<div class="form-group">
+													<form>
+														<div class="form-group">
+															<label for="exampleFormControlFile1">Carousel Images <b class="text-danger">*</b></label>
+															<input type="file" class="form-control-file" id="exampleFormControlFile1">
+														</div>
+													</form>
+												</div>
+											</div>
+											<div class="col-sm-10 col-sm-offset-1">
+												<form>
+													<div class="form-group">
+														<label for="exampleFormControlTextarea1">Carousel Info <b class="text-danger">*</b></label>
+														<textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+													</div>
+												</form>
+											</div>
+											<div class="col-sm-10 col-sm-offset-1">
+												<div class="form-group">
+													<label>Volunteers <b class="text-danger">*</b></label>
+													<input name="firstname" type="text" class="form-control" placeholder="John Doe">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wizard-footer height-wizard">
+									<div class="pull-right">
+										<input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
+										<input type='button' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='Finish' />
 
-                            <div class="pull-left">
-                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+									</div>
 
-                    </form>
-                </div>
-            </div> 
-        </div>
-        </div>
-    </div> 
+									<div class="pull-left">
+										<input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!--JS Files -->
-	<script src="{{url_for('static',filename='scripts/jquery-2.2.4.min.js')}}" type="text/javascript"></script>
-	<script src="{{url_for('static',filename='scripts/bootstrap.min.js')}}" type="text/javascript"></script>
-	<script src="{{url_for('static',filename='scripts/jquery.bootstrap.wizard.js')}}" type="text/javascript"></script>
-	<script src="{{url_for('static',filename='scripts/gsdk-bootstrap-wizard.js')}}"></script>
-	<script src="{{url_for('static',filename='scripts/jquery-2.2.4.min.js')}}"></script>
+	<script src="{{url_for('main.static',filename='js/jquery-2.2.4.min.js')}}" type="text/javascript"></script>
+	<script src="{{url_for('main.static',filename='js/bootstrap.min.js')}}" type="text/javascript"></script>
+	<script src="{{url_for('main.static',filename='js/jquery.bootstrap.wizard.js')}}" type="text/javascript"></script>
+	<script src="{{url_for('main.static',filename='js/gsdk-bootstrap-wizard.js')}}"></script>
+	<script src="{{url_for('main.static',filename='js/jquery.validate.min.js')}}"></script>
 </body>
+
 </html>
