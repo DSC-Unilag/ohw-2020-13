@@ -46,31 +46,15 @@
 											<div class="picture-container">
 												<div class="picture">
 													<img src="{{url_for('main.static',filename='img/default-avatar.png')}}" class="picture-src" id="wizardPicturePreview" title="" />
-													<input type="file" id="wizard-picture">
+													<input type="file" name="file" id="wizard-picture">
 												</div>
 												<h6>Choose Website Logo</h6>
 											</div>
 										</div>
 										<div class="col-sm-6">
 											<div class="form-group">
-												<label>Full Name <b class="text-danger">*</b></label>
-												<input name="firstname" type="text" class="form-control" placeholder="Ohw">
-											</div>
-											<div class="form-group">
-												<label>Website Name <b class="text-danger">*</b></label>
-												<input name="lastname" type="text" class="form-control" placeholder="Sam">
-											</div>
-										</div>
-										<div class="col-sm-10 col-sm-offset-1">
-											<div class="form-group">
-												<label>Admin ID <b class="text-danger">*</b></label>
-												<input name="number" type="number" class="form-control" placeholder="10001">
-											</div>
-										</div>
-										<div class="col-sm-10 col-sm-offset-1">
-											<div class="form-group">
-												<label>Content <b class="text-danger">*</b></label>
-												<input name="text" type="text" class="form-control" placeholder="message">
+												<label>Site Name <b class="text-danger">*</b></label>
+												<input name="site_name" type="text" class="form-control" placeholder="Ohw">
 											</div>
 										</div>
 									</div>
@@ -78,12 +62,6 @@
 								<div class="tab-pane" id="account">
 									<h4 class="info-text">Create your Site</h4>
 									<div class="row">
-										<div class="col-sm-10 col-sm-offset-1">
-											<div class="form-group mx-auto">
-												<label>ID<b class="text-danger">*</b></label>
-												<input name="number" type="text" class="form-control" placeholder="10002">
-											</div>
-										</div>
 										<div class="col-sm-10 col-sm-offset-1">
 											<form>
 												<div class="form-group">
