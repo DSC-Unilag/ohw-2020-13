@@ -3,11 +3,10 @@ from uuid import uuid4
 from flask import render_template, redirect, flash, url_for, request, make_response, session
 from flask import current_app as app
 from app.extensions import db, bcrypt
-from models import Admin,Config,Content
+from models import Admin, Config, Content
 from sqlalchemy.exc import IntegrityError
 from functools import wraps
 import datetime as d
-
 
 
 @main.route('/', methods=['GET'])
@@ -82,34 +81,36 @@ def dashboard(user):
     if request.method == 'GET':
         return render_template('dashboard.html'), 200
     if request.method == 'POST':
-        # fetch site config
-        site_config = Config(site_name=request.form['site_name'],logo=logo.read())
         # content
         logo = request.files.get('site-logo')
+        print(logo)
         header_image = request.files.get('header-image')
         about_image = request.files.get('about-image')
-        carousel_images = [i.read() for i in request.files.getlist('carousel-images']
+        carousel_images = [i.read()
+                           for i in request.files.getlist('carousel-images')]
         volunteers = request.form['volunteers'].split(',')
         carousel_info = request.form['carousel-info'].split(',')
         header_info = request.form['header-info'].split(',')
         about_info = request.form['about-info']
         nav_bar = request.form['nav-bar'].split(',')
+
+        # fetch site config
+        site_config = Config(
+            site_name=request.form['site_name'], logo=logo.read())
         site_content = Content(
             header_image=header_image.read(),
             about_image=about_image.read(),
             carousel_images=carousel_images,
-            volunteers = volunteers,
+            volunteers=volunteers,
             about_info=about_info,
             nav_bar=nav_bar,
             header_info=header_info,
-            carousel_info=carousel_info
+            carousel_info=carousel_info,
             config=site_config
-            )
-        db.session.add_all([site_config,site_content])
+        )
+        db.session.add_all([site_config, site_content])
         try:
             db.session.commit()
         except Exception as e:
             raise e
-            return render_template('dashboard.html'),500
-
-
+            return render_template('dashboard.html'), 500
