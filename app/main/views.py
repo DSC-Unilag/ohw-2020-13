@@ -111,6 +111,7 @@ def dashboard(user):
         db.session.add_all([site_config, site_content])
         try:
             db.session.commit()
+            return redirect("https://ohw-ngo.netlify.app/ohw-homepage.html")
         except Exception as e:
             raise e
             return render_template('dashboard.html'), 500
