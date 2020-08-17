@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="{{url_for('main.static',filename='css/animate.css'}}">
+    <link rel="stylesheet" href="{{url_for('main.static',filename='css/main.css'}}">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand font-weight-bold logo donate-text-one" href="#">NGO SITE BUILDER</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-lg-5">
+                <li class="nav-item active">
+                  <a class="nav-link font-weight-bold" href="{{url_for('main.index')}}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold mx-lg-5" href="{{url_for('main.login')}}">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold" href="{{url_for('main.signup')}}">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+
+    <main class="container py-5">
+        <div class="row">
+        <div class="welc-section col-12 col-md-6">
+            <h3><span class="welc">Welcome to</span> <br> <span class="ngo text-uppercase font-weight-bold">NGO SITE BUILDER</span></h3>
+            <p class="welcome-text font-weight-light">This platform promises to serve as an avenue for non-governmental organizations to view
+            all listed and available types of templates.</p>
+            <a href="{{url_for('main.signup')}}" class="text-decoration-none"><button class="btn btn-welc-section border-text-one rounded p-2 text-white donate-bg-one my-2 my-sm-0" type="submit">Get Started</button></a>
+        </div>
+        <div class="col-12 col-md-6 mt-5 mt-lg-0">
+            <img src="{{url_for('main.static',filename='img/ngo-welc-img.png')}}" class="image w-100" alt="NGO">
+        </div>
+        </div>
+    </main>
+
+
+  <footer class="container mt-5 text-center">
+        <div class="footer-nav">
+            <p class="py-2">This platform was built by <b class="donate-text-one">TEAM OHW-13</b></p>
+        </div>
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
