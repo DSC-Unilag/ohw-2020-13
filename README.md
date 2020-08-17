@@ -19,4 +19,4 @@ NGOs get to configure their websites using pre-defined templates.
 [Paul Asalu](https://GitHub.com/curiousPaul1)  
 [Oluwasesanfunmi Takuro](https://GitHub.com/The-KS101)
 
-Hosted Demo: [https://ohw13.herokuapp.com/app/signup/](https://ohw13.herokuapp.com/app/signup/)
+Hosted Demo: [https://ohw13.herokuapp.com/app/](https://ohw13.herokuapp.com/app/)
