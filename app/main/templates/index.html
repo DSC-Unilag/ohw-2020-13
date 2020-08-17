@@ -44,10 +44,10 @@
             <h3><span class="welc">Welcome to</span> <br> <span class="ngo text-uppercase font-weight-bold">NGO SITE BUILDER</span></h3>
             <p class="welcome-text font-weight-light">This platform promises to serve as an avenue for non-governmental organizations to view
             all listed and available types of templates.</p>
-            <a href="./signup.html" class="text-decoration-none"><button class="btn btn-welc-section border-text-one rounded p-2 text-white donate-bg-one my-2 my-sm-0" type="submit">Get Started</button></a>
+            <a href="{{url_for('main.signup')}}" class="text-decoration-none"><button class="btn btn-welc-section border-text-one rounded p-2 text-white donate-bg-one my-2 my-sm-0" type="submit">Get Started</button></a>
         </div>
         <div class="col-12 col-md-6 mt-5 mt-lg-0">
-            <img src="././frontend/img/ngo-welc-img.png" class="image w-100" alt="NGO">
+            <img src="{{url_for('main.static',filename='img/ngo-welc-img.png')}}" class="image w-100" alt="NGO">
         </div>
         </div>
     </main>
